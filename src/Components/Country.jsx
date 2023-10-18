@@ -1,7 +1,12 @@
+import { useEffect } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 
 function Country() {
   const country = useLoaderData()[0];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="country-page">
       <Link to={"/"} className="back">
