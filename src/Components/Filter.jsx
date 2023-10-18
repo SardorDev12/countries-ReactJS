@@ -1,3 +1,4 @@
+import { memo, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 function Filter({
   handleSearch,
@@ -49,4 +50,4 @@ function Filter({
     </div>
   );
 }
-export default Filter;
+export default memo(Filter);

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 import { Outlet } from "react-router-dom";
 import "../index.css";
 
@@ -29,4 +29,4 @@ function GlobalLayout() {
     </div>
   );
 }
-export default GlobalLayout;
+export default memo(GlobalLayout);

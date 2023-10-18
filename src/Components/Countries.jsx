@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function Countries({
@@ -24,9 +24,9 @@ function Countries({
   }, [searchRegion, searchTerm, countries]);
   return (
     <ul className="countries">
-      {filteredCountries.map((country, index) => {
+      {filteredCountries.map((country) => {
         return (
-          <li key={index} className="country">
+          <li key={country.cca3} className="country">
             <Link to={country.name.common}>
               <div className="country-image">
                 <img src={country.flags.svg} alt={country.flags.alt} />
@@ -50,4 +50,4 @@ function Countries({
     </ul>
   );
 }
-export default Countries;
+export default memo(Countries);
