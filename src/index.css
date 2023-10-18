@@ -41,9 +41,9 @@ img {
   padding: 1.5rem 0;
   background-color: #fff;
   color: #000;
-  box-shadow: 0 0 2px black;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 body.dark .header {
@@ -62,8 +62,12 @@ body.dark .header {
 .filter {
   display: flex;
   justify-content: space-around;
-  padding: 1.5rem 0;
+  padding-bottom: 1.5rem;
   padding-top: 6rem;
+  position: fixed;
+  width: 100%;
+  background-color: hsl(209, 23%, 22%);
+  z-index: 0;
 }
 
 .search-filter input {
@@ -120,6 +124,7 @@ body.dark .selectFilter select {
 .countries {
   width: 90%;
   margin: 0 auto;
+  padding-top: 12rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
@@ -146,4 +151,55 @@ body.dark .selectFilter select {
 
 .country-page {
   padding-top: 6rem;
+}
+
+.back {
+  padding: 0.5rem 1rem;
+  margin: 2rem 5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+body.dark .back {
+  background-color: hsl(209, 23%, 22%);
+}
+
+.country-full-info {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.info__country-image {
+  width: 400px;
+}
+
+.info-details ul {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 0.5rem;
+}
+
+.borders {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.borders ul {
+  grid-template-columns: none;
+  display: flex;
+  margin: 0;
+}
+
+.borders ul li {
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
 }

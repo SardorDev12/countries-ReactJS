@@ -7,7 +7,6 @@ function Countries({
   searchRegion,
   setFilteredCountries,
 }) {
-  console.log(countries);
   const [filteredCountries, setFilteredCountriess] = useState(countries);
 
   useEffect(() => {
