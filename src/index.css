@@ -241,7 +241,12 @@ body.dark .back {
   }
 
   .country-full-info {
-    width: 95%;
+    width: 90%;
+    padding-bottom: 1rem;
+  }
+
+  .back {
+    margin-left: 1rem;
   }
 
   .borders ul li {
@@ -255,6 +260,6 @@ body.dark .back {
   }
 
   .info__country-image img {
-    width: 300px;
+    width: 280px;
   }
 }
