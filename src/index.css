@@ -249,6 +249,10 @@ body.dark .back {
     margin-left: 1rem;
   }
 
+  .info__country-image img {
+    width: 350px;
+  }
+
   .borders ul li {
     padding: 0.2rem;
   }
@@ -257,9 +261,5 @@ body.dark .back {
 @media screen and (max-width: 320px) {
   .info-details ul {
     grid-template-columns: 1fr;
-  }
-
-  .info__country-image img {
-    width: 280px;
   }
 }
