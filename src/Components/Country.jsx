@@ -2,7 +2,6 @@ import { Link, useLoaderData } from "react-router-dom";
 
 function Country() {
   const country = useLoaderData()[0];
-  console.log(country);
   return (
     <div className="country-page">
       <Link to={"/"} className="back">

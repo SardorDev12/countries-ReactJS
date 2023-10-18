@@ -209,3 +209,28 @@ body.dark .back {
   border: 1px solid black;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 768px) {
+  .countries {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .filter {
+    flex-direction: column;
+  }
+
+  .search-filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .selectFilter {
+    margin: 1rem auto;
+  }
+  .countries {
+    padding-top: 15rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
