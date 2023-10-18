@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body.dark {
+  background-color: hsl(207, 26%, 17%);
+  color: #ffffff;
+}
+
+body.dark a {
+  color: #ffffff;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem 0;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 0 2px black;
+  position: fixed;
+  width: 100%;
+}
+
+body.dark .header {
+  background-color: hsl(209, 23%, 22%);
+  color: #fff;
+}
+
+.changeTheme {
+  cursor: pointer;
+}
+
+.changeTheme.light {
+  color: #000;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem 0;
+  padding-top: 6rem;
+}
+
+.search-filter input {
+  background-color: #ffffff;
+  color: #968686;
+  outline: none;
+  border: none;
+  padding: 0.8rem 2rem 0.8rem 0.5rem;
+  border-radius: 3px;
+  box-shadow: 0 0 2px black;
+}
+
+input::placeholder {
+  color: #0000006b;
+}
+
+body.dark .search-filter input {
+  background-color: hsl(209, 23%, 22%);
+  color: #fff;
+}
+
+body.dark .search-filter input::placeholder {
+  color: #ffffff5d;
+}
+
+.search-filter > button {
+  padding: 0.8rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  margin: 0 1rem;
+  background-color: hsl(96, 26%, 40%);
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.search-filter > button:hover {
+  background-color: hsl(96, 28%, 42%);
+  color: #fff;
+}
+
+.selectFilter select {
+  outline: none;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+}
+
+body.dark .selectFilter select {
+  background-color: hsl(209, 23%, 22%);
+  color: #fff;
+}
+
+.countries {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.country {
+  border: 1px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.country-info {
+  padding: 1rem;
+}
+.country .country-image {
+  height: 200px;
+  border-bottom: 1px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.country .country-name {
+  margin: 1rem 0;
+}
+
+.country-page {
+  padding-top: 6rem;
+}
